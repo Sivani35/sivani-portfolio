@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sivani Panigrahi – AI Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2c3e50;
+      color: white;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    canvas {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sivani Panigrahi</h1>
+  <p>AI Engineer | Data Analyst | Business Analytics Graduate Student</p>
+  <p>Denton, TX | <a href="mailto:sivanipanigrahi14@gmail.com">sivanipanigrahi14@gmail.com</a> | +1 940-758-3307</p>
+  <p><a href="https://github.com/sivani35">GitHub</a> | <a href="https://linkedin.com/in/sivani-panigrahi-3767461a0">LinkedIn</a></p>
+  <img src="profile.jpg" alt="Sivani Panigrahi" />
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>I’m a passionate AI engineer and data analyst with 3+ years of experience across tech and retail sectors. Currently pursuing my MS in Business Analytics at the University of North Texas, I specialize in building scalable machine learning systems, predictive models, and data-driven solutions.</p>
+  <ul>
+    <li>Graduate Assistant @ UNT – Tackling student attrition with predictive analytics</li>
+    <li>AI Engineer @ Driver AI – Developing intelligent systems for autonomous driving</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card">Generative AI, LangChain, LLMs (GPT, BERT)</div>
+    <div class="card">Python, R, SQL, REST APIs</div>
+    <div class="card">TensorFlow, PyTorch, scikit-learn</div>
+    <div class="card">AWS, Azure, GCP, Redshift</div>
+    <div class="card">Power BI, Tableau, Excel Dashboards</div>
+    <div class="card">Communication, Leadership, Critical Thinking</div>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="card">
+    <strong>Driver AI – AI Engineer</strong> (Jan 2024 – Present)<br>
+    Designing AI models for autonomous systems and real-time decision-making.
+  </div>
+  <div class="card">
+    <strong>University of North Texas – Graduate Assistant</strong> (Jan 2024 – Present)<br>
+    Analyzing student attrition and building predictive models for retention.
+  </div>
+  <div class="card">
+    <strong>Amazon – Senior Data Analyst</strong> (Aug 2020 – Dec 2023)<br>
+    Built CNN-based product classifiers and piloted GenAI for content generation.
+  </div>
+  <div class="card">
+    <strong>Flipkart – Data Analyst</strong> (Mar 2020 – Aug 2020)<br>
+    Automated product listing optimization and improved demand forecasting.
+  </div>
+  <div class="card">
+    <strong>OYO – Data Analyst</strong> (Apr 2019 – Jan 2020)<br>
+    Developed churn prediction models and dynamic pricing strategies.
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="card">
+    <strong>Chronic Kidney Disease Prediction</strong><br>
+    ML models: Logistic Regression, SVM, XGBoost<br>
+    AUC-ROC: 0.96 | Accuracy: 94% | Precision: 95%
+  </div>
+  <div class="card">
+    <strong>LLM-Powered Personalized Learning Assistant (In Progress)</strong><br>
+    Fine-tuning open-source LLMs and implementing vector similarity search.
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <p><strong>University of North Texas</strong><br>
+  MS in Business Analytics – Expected Dec 2025</p>
+</section>
+
+<section>
+  <h2>Analytics Dashboard</h2>
+  <p>Student Attrition Trends (Sample Data)</p>
+  <canvas id="myChart" width="400" height="200"></canvas>
+</section>
+
+<footer>
+  <p>Let’s connect! Reach out at <a href="mailto:sivanipanigrahi14@gmail.com">sivanipanigrahi14@gmail.com</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+      datasets: [{
+        label: 'Student Attrition',
+        data: [12, 19, 3, 5],
+        backgroundColor: '#2980b9'
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
