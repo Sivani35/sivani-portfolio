@@ -3,125 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sivani Panigrahi Portfolio</title>
+  <title>Sivani Panigrahi – AI Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4f8;
       margin: 0;
       padding: 0;
+      background: #f4f4f4;
       color: #333;
     }
     header {
-      background-color: #34495e;
+      background: #2c3e50;
       color: white;
+      padding: 2rem;
       text-align: center;
-      padding: 2rem 1rem;
     }
     header img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
-      margin-bottom: 1rem;
+      border-radius: 50%;
+      margin-top: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
       border: 3px solid white;
     }
-    h1 {
-      margin: 0.5rem 0;
-    }
     section {
-      max-width: 800px;
-      margin: 2rem auto;
-      background-color: white;
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: auto;
     }
     h2 {
       color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
       margin-bottom: 1rem;
-      font-size: 1.4rem;
     }
-    .icon {
-      font-size: 1.3rem;
-      margin-right: 0.5rem;
+    h2::before {
+      content: "📌 ";
     }
-    ul {
-      padding-left: 1.5rem;
-      line-height: 1.6;
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
     }
     footer {
       text-align: center;
+      padding: 2rem;
+      background: #2c3e50;
+      color: white;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    canvas {
+      margin-top: 1rem;
+      background: white;
       padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    ul {
+      padding-left: 1.2rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="sivani-photo.jpg" alt="Sivani Panigrahi" />
-    <h1>Sivani Panigrahi</h1>
-    <p>Disciplined Learner | Data Analyst | Ethical Thinker</p>
-  </header>
+<header>
+  <h1>👩‍💻 Sivani Panigrahi</h1>
+  <p>AI Engineer | Data Analyst | Business Analytics Graduate Student</p>
+  <p>Denton, TX | <a href="mailto:sivanipanigrahi14@gmail.com">sivanipanigrahi14@gmail.com</a> | +1 940-758-3307</p>
+  <p><a href="https://github.com/sivani35">GitHub</a> | <a href="https://linkedin.com/in/sivani-panigrahi-3767461a0">LinkedIn</a></p>
+  <img src="sivani-photo.jpg" alt="Sivani Panigrahi" />
+</header>
 
-  <section>
-    <h2><span class="icon">🎯</span>Short-Term Goals</h2>
+<section>
+  <h2>About Me</h2>
+  <p>I’m a Business Analytics graduate student at the University of North Texas with 3+ years of experience delivering data-driven solutions across retail, tech, and education sectors. I specialize in building scalable machine learning infrastructure, performing exploratory data analysis, and translating business requirements into AI-powered applications. Known for my creativity, problem-solving, and clear communication in cross-functional teams.</p>
+</section>
+
+<section>
+  <h2>Current Roles</h2>
+  <div class="card">
+    <strong>🎓 Graduate Assistant – University of North Texas</strong>
     <ul>
-      <li>Study for 5 hours a day and exercise for 1 hour daily</li>
-      <li>Balance graduate assistantship with internship opportunities</li>
-      <li>Work on a customer churn prediction project proposal</li>
+      <li>Analyzing student attrition trends and developing predictive models to support retention strategies.</li>
+      <li>Collaborating with academic departments to translate insights into actionable interventions.</li>
     </ul>
-  </section>
-
-  <section>
-    <h2><span class="icon">🧠</span>Skills</h2>
+  </div>
+  <div class="card">
+    <strong>🚗 AI Engineer – Driver AI</strong>
     <ul>
-      <li>Intermediate Python: debugging, data manipulation, precise calculations</li>
-      <li>Strong analytical abilities: structuring descriptive and predictive questions</li>
-      <li>Data quality checks: handling missing values, inconsistencies, outliers</li>
-      <li>Predictive modeling: regression, clustering, classification</li>
-      <li>Clear communication: synthesizing technical insights collaboratively</li>
+      <li>Designing intelligent systems for autonomous driving using deep learning and real-time decision algorithms.</li>
+      <li>Integrating scalable AI models into production pipelines for enhanced vehicle performance.</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2><span class="icon">📚</span>Interests</h2>
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card">🤖 Generative AI, LangChain, LLMs (GPT, BERT)</div>
+    <div class="card">🐍 Python (OOP), R, SQL, REST APIs</div>
+    <div class="card">🧠 TensorFlow, PyTorch, scikit-learn, XGBoost</div>
+    <div class="card">☁️ AWS, Azure, GCP, Redshift, ETL</div>
+    <div class="card">📊 Power BI, Tableau, Excel Dashboards</div>
+    <div class="card">💬 Communication, Collaboration, Critical Thinking</div>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Experience</h2>
+  <div class="card">
+    <strong>🛒 Amazon – Senior Data Analyst</strong> (Aug 2020 – Dec 2023)
     <ul>
-      <li>Learning Python through practical examples</li>
-      <li>Improving persuasive speaking and writing</li>
-      <li>Data visualization using Excel for storytelling</li>
-      <li>Exploring machine learning for real-world forecasting</li>
-      <li>Business analytics: customer churn and decision-making</li>
+      <li>Developed CNN-based product classifier, expanding catalog coverage from 500K to 1.2M SKUs.</li>
+      <li>Preprocessed 10M+ product rows using Redshift and deployed models via SageMaker, improving accuracy by 15%.</li>
+      <li>Piloted GenAI integration for product content generation, enhancing metadata quality and customer experience.</li>
     </ul>
-  </section>
-
-  <section>
-    <h2><span class="icon">🛠️</span>Recent Tasks</h2>
+  </div>
+  <div class="card">
+    <strong>📦 Flipkart – Data Analyst</strong> (Mar 2020 – Aug 2020)
     <ul>
-      <li>Actively learning Python: list manipulation, debugging, syntax, dictionaries</li>
-      <li>Exploring productivity concepts like “Focus requires subtraction”</li>
-      <li>Using Excel tools like interactive charts and slicers</li>
-      <li>Reflecting on fairness and ethics in data analysis</li>
-      <li>Synthesizing AI-generated insights with personal reflections</li>
-      <li>Preparing modeling dataset with encoded variables</li>
+      <li>Automated product listing optimization using predictive models, resulting in a 15% rise in conversions.</li>
+      <li>Transformed 500K+ transactional records to improve demand forecasting for inventory planning.</li>
     </ul>
-  </section>
-
-  <section>
-    <h2><span class="icon">🌟</span>Character</h2>
+  </div>
+  <div class="card">
+    <strong>🏨 OYO – Data Analyst</strong> (Apr 2019 – Jan 2020)
     <ul>
-      <li>Disciplined and motivated with a structured routine</li>
-      <li>Curious about health, learning, and communication</li>
-      <li>Thoughtful and principled in ethical data practices</li>
-      <li>Collaborative learner open to new perspectives</li>
+      <li>Created churn prediction models using Random Forest and SVM, reducing hotel churn rates by 30%.</li>
+      <li>Designed dynamic pricing models that improved revenue by 7% across underperforming segments.</li>
+      <li>Built automated dashboards for real-time business monitoring using Power BI and SQL.</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 Sivani Panigrahi. Designed with purpose and passion.
-  </footer>
+<section>
+  <h2>Projects</h2>
+  <div class="card">
+    <strong>🤖 LinkedIn Auto Apply Bot</strong>
+    <ul>
+      <li>Developed an automated LinkedIn job application bot using Selenium and Python.</li>
+      <li>Streamlined job search by auto-submitting applications for targeted “Business Analyst Intern” roles.</li>
+      <li>Significantly enhanced application efficiency and reduced manual effort.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <strong>🩺 Chronic Kidney Disease Prediction</strong> – Project Lead
+    <ul>
+      <li>Developed and evaluated ML models on clinical datasets for CKD prediction.</li>
+      <li>Achieved 94% accuracy and 95% precision using XGBoost with advanced feature engineering.</li>
+      <li>Technologies: Logistic Regression, SVM, XGBoost.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <strong>📬 UNT Smart Draft – Agentic AI Email Assistant</strong> – Project Lead
+    <ul>
+      <li>Built a voice-activated academic email assistant using GPT-3.5, gTTS, Selenium, and speech recognition.</li>
+      <li>Enabled hands-free email generation and Outlook integration for faculty.</li>
+      <li>Reduced manual drafting time by up to 60%.</li>
+      <li>Technologies: Python, OpenAI GPT-3.5, Speech Recognition, Dialogflow.</li>
+    </ul>
+  </div>
+</section>
 
-</body>
-</html>
+<section>
+  <h2>Education</h2>
+  <p><strong>🎓 University of North Texas</strong><br>
+  G. Brint Ryan College of Business<br>
+  January 2024 – Present<br>
+  Major: Graduate Prep Program, Business Analytics<br>
+  School Year: Master’s | GPA: 3.9</p>
+  <p>Pursuing a Master’s in Business Analytics to build expertise in data-driven decision-making and advanced analytical methods. The program emphasizes predictive analytics, data visualization, machine learning, and big data technologies. Leveraging prior professional experience, this degree deepens knowledge in statistical modeling, forecasting, and actionable insights generation to solve complex business challenges and enhance organizational performance.</p>
+</section>
+
+<section>
+  <h2>Analytics Dashboard</h2>
+  <p>
